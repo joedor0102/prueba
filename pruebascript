@@ -14,4 +14,3 @@ INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id 
 INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Puestos de Trabajo', 'VER', '2', 'ROLE_VER_PUESTOS_TRABAJO');
 INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Puestos de Trabajo', 'VER', '2', 'ROLE_VER_PUESTO_TRABAJO');
 INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, 
-dñfmdñfmdslñkm
