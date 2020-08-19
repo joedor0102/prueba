@@ -1,0 +1,17 @@
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales', 'VER', '2', 'ROLE_VER_PRL');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Equipo Protección Individual', 'VER', '2', 'ROLE_VER_EPI');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Equipo Protección Individual', 'CREAR', '2', 'ROLE_CREAR_EPI');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Equipo Protección Individual', 'MODIFICAR', '2', 'ROLE_MODIFICAR_EPI');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Equipo Protección Individual', 'ELIMINAR', '2', 'ROLE_ELIMINAR_EPI');
+
+INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id FROM novonet.permiso p WHERE p.nombre = 'Prevención Riesgos Laborales' and p.permiso_spring_sec = 'ROLE_VER_PRL'), (SELECT id FROM novonet.rol r WHERE r.nombre = 'Administrador'));
+INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id FROM novonet.permiso p WHERE p.nombre = 'Prevención Riesgos Laborales/Equipo Protección Individual' and p.permiso_spring_sec = 'ROLE_VER_EPI'), (SELECT id FROM novonet.rol r WHERE r.nombre = 'Administrador'));
+INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id FROM novonet.permiso p WHERE p.nombre = 'Prevención Riesgos Laborales/Equipo Protección Individual' and p.permiso_spring_sec = 'ROLE_CREAR_EPI'), (SELECT id FROM novonet.rol r WHERE r.nombre = 'Administrador'));
+INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id FROM novonet.permiso p WHERE p.nombre = 'Prevención Riesgos Laborales/Equipo Protección Individual' and p.permiso_spring_sec = 'ROLE_MODIFICAR_EPI'), (SELECT id FROM novonet.rol r WHERE r.nombre = 'Administrador'));
+INSERT INTO `novonet`.`permiso_rol` (`id_permiso`, `id_rol`) VALUES ((SELECT id FROM novonet.permiso p WHERE p.nombre = 'Prevención Riesgos Laborales/Equipo Protección Individual' and p.permiso_spring_sec = 'ROLE_ELIMINAR_EPI'), (SELECT id FROM novonet.rol r WHERE r.nombre = 'Administrador'));
+
+
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Puestos de Trabajo', 'VER', '2', 'ROLE_VER_PUESTOS_TRABAJO');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, `permiso_spring_sec`) VALUES ('Prevención Riesgos Laborales/Puestos de Trabajo', 'VER', '2', 'ROLE_VER_PUESTO_TRABAJO');
+INSERT INTO `novonet`.`permiso` (`nombre`, `tipo`, `aplicacion`, 
+dñfmdñfmdslñkm
